@@ -2,11 +2,29 @@
 
 Landing page estática de Reporta Ya!, creada con HTML semántico, CSS y JavaScript sin dependencias de runtime. Incluye una escena hero con profundidad 3D, animación sutil y controles compatibles con movimiento reducido.
 
-## Abrir en Visual Studio Code
+## Ejecutar en Visual Studio Code
+
+Requisitos: Node.js 20.19+ o 22.12+ y npm.
 
 1. Abre la carpeta `reporta-ya-landing` en VS Code.
-2. Usa **Live Server** sobre `index.html`, o abre el archivo directamente en Chrome.
-3. No requiere `.env`, API ni base de datos: es únicamente la landing pública del producto.
+2. Abre **Terminal → Nuevo terminal** en VS Code.
+3. Instala las dependencias una sola vez:
+
+   ```bash
+   npm install
+   ```
+
+4. Inicia el servidor de desarrollo:
+
+   ```bash
+   npm run dev
+   ```
+
+5. Abre la dirección que imprime Vite, normalmente `http://127.0.0.1:5173/`.
+
+Para generar la versión de producción usa `npm run build`. Para verla localmente después de compilar, ejecuta `npm run preview`.
+
+No requiere `.env`, API ni base de datos: es únicamente la landing pública del producto.
 
 ## Estructura
 
@@ -17,6 +35,8 @@ reporta-ya-landing/
 │   ├── images/reporta-mark.svg
 │   └── js/main.js
 ├── docs/aviso-de-uso.md
+├── package.json
+├── vite.config.js
 ├── .editorconfig
 ├── .gitignore
 ├── .nojekyll
